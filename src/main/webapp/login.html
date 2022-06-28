@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="wf-poppins-n3-active wf-poppins-n5-active wf-poppins-n4-active wf-poppins-n6-active wf-poppins-n7-active wf-roboto-n3-active wf-roboto-n4-active wf-roboto-n5-active wf-roboto-n6-active wf-roboto-n7-active wf-active"><!-- begin::Head --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>Universidad Nacional de Frontera | Login</title>
+        <meta name="description" content="Universidad Nacional de Frontera - ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://campusvirtual.unf.edu.pe/images/themes/unf/favicon.ico">
+        <!--begin::Web font -->
+        <script src="./Login_files/webfont.js"></script><style></style>
+        <link rel="stylesheet" href="./Login_files/css" media="all"><script>
+            WebFont.load({
+                google: {"families": ["Poppins:300,400,500,600,700", "Roboto:300,400,500,600,700"]},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!--end::Web font -->
+        <!--begin::Base Styles -->
+
+        <link href="./Login_files/vendors.bundle.css" rel="stylesheet" type="text/css">
+        <link href="./Login_files/style.bundle.css" rel="stylesheet" type="text/css">
+        <link href="./Login_files/login.css" rel="stylesheet">
+        <link href="./Login_files/login(1).css" rel="stylesheet">
+        <style>
+            .wrapper:after {
+                background-image: url("/images/themes/unf/login.jpg");
+            }
+        </style>
+
+        <!--end::Base Styles -->
+        <style type="text/css">span.im-caret {
+                -webkit-animation: 1s blink step-end infinite;
+                animation: 1s blink step-end infinite;
+            }
+
+            @keyframes blink {
+                from, to {
+                    border-right-color: black;
+                }
+                50% {
+                    border-right-color: transparent;
+                }
+            }
+
+            @-webkit-keyframes blink {
+                from, to {
+                    border-right-color: black;
+                }
+                50% {
+                    border-right-color: transparent;
+                }
+            }
+
+            span.im-static {
+                color: grey;
+            }
+
+            div.im-colormask {
+                display: inline-block;
+                border-style: inset;
+                border-width: 2px;
+                -webkit-appearance: textfield;
+                -moz-appearance: textfield;
+                appearance: textfield;
+            }
+
+            div.im-colormask > input {
+                position: absolute;
+                display: inline-block;
+                background-color: transparent;
+                color: transparent;
+                -webkit-appearance: caret;
+                -moz-appearance: caret;
+                appearance: caret;
+                border-style: none;
+                left: 0; /*calculated*/
+            }
+
+            div.im-colormask > input:focus {
+                outline: none;
+            }
+
+            div.im-colormask > input::-moz-selection{
+                background: none;
+            }
+
+            div.im-colormask > input::selection{
+                background: none;
+            }
+            div.im-colormask > input::-moz-selection{
+                background: none;
+            }
+
+            div.im-colormask > div {
+                color: black;
+                display: inline-block;
+                width: 100px; /*calculated*/
+            }</style><style type="text/css">/* Chart.js */
+            @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+    <!-- end::Head -->
+    <!-- end::Body -->
+    <body class="m--skin- m-page--loading-enabled m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+        <!-- begin::Page loader -->
+        <div class="m-page-loader m-page-loader--base">
+            <div class="m-spinner m-spinner--brand"></div>
+        </div>
+        <!-- end::Page Loader -->
+        <!-- begin:: Page -->
+        <section class="wrapper">
+            <div class="intro">
+                <div class="left-ovh">
+                    <div class="left-side">
+
+
+                        <style>
+                            .wrapper:after {
+                                background-image: url("./Login_files/login.jpg");
+                            }
+                        </style>
+
+                        <div class="m-login__wrapper">
+                            <input type="hidden" id="Temp_Error_Message">
+                            <div class="form">
+                                <div>
+                                    <a>
+                                        <img class="logo" src="./Login_files/logo.png">
+                                    </a>
+                                </div>
+                                <div style="margin:19px 2px;">
+                                    <br class="space"><br class="space"><br class="space"><br>
+                                    <h1>GESTIÓN DOCENTE</h1><br>
+                                    <form class="m-login__form m-form" method="post" action="saveData.jsp">
+                                        <div class="text-danger validation-summary-valid" style="font-weight: 500;" data-valmsg-summary="true"><ul><li style="display:none"></li>
+                                            </ul></div>
+                                        <div class="group">
+                                            <input placeholder="USUARIO" name="username" autocomplete="off" required="" type="text" data-val="true" data-val-required="The UserName field is required." id="UserName" value="">
+                                            <img class="ico" src="./Login_files/user.svg">
+                                            <div class="bar"></div>
+                                            <span class="text-danger field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="group">
+                                            <input type="password" placeholder="CONTRASEÑA" name="password" required="" data-val="true" data-val-required="The Password field is required." id="Password">
+                                            <i class="fa fa-eye" style="display: none;"></i>
+                                            <img class="ico" src="./Login_files/pass.svg">
+                                            <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                            <div class="bar"></div>
+                                        </div>
+                                        <input type="hidden" id="System" name="System" value="GESTIÓN DOCENTE">
+                                        <input type="hidden" data-val="true" data-val-required="The SystemLogin field is required." id="SystemLogin" name="SystemLogin" value="11">
+                                        <div class="m-login__form-action">
+                                            <input id="m_login_signin_submit" type="submit" class="btn m-btn m-login__btn m-login__btn--primary button-submit" value="INGRESAR"/>
+                                            <a id="google" style="width:100%;margin-top:0px !important;padding: 10px;" class="btn btn-primary btn-lg button-submit">
+                                                INGRESAR CON GOOGLE
+                                            </a>
+                                            <a class="forget-password-label">¿Olvidaste tu contraseña?</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--begin::Modal-->
+                        <input type="hidden" id="BeginningAnnouncement" value="true">
+                        <!--end::Modal-->
+
+
+
+                        <div style="width:145px;left:25px;bottom:25px;position: fixed;">
+                            <img src="./Login_files/logo.svg" style="" class="logo">
+                        </div>
+                    </div>
+                    <div class="triangle"></div>
+                </div>
+                <div class="triangle right"></div>
+                <div class="container-shape one" style="margin-top: 2.4px; margin-left: -1.9px;">
+                    <div class="shape one"></div>
+                </div>
+                <div class="container-shape two" style="margin-top: 2.4px; margin-left: -1.9px;">
+                    <div class="shape two"></div>
+                </div>
+                <div class="container-shape right three" style="margin-top: 2.4px; margin-left: -1.9px;">
+                    <div class="right shape three"></div>
+                </div>
+                <div class="container-shape right four" style="margin-top: 2.4px; margin-left: -1.9px;">
+                    <div class="right shape four"></div>
+                </div>
+                <div class="container-shape right five" style="margin-top: 2.4px; margin-left: -1.9px;">
+                    <div class="right shape five"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- end:: Page -->
+        <!--begin::Base Scripts -->
+
+
+        <script src="./Login_files/bundle.min.js" type="text/javascript"></script>
+
+        <!--<script src="./Login_files/login.js"></script>-->
+        <!--end::Base Scripts -->
+        <!--begin::Page Snippets -->
+
+        <script>
+            $(".group>i").hide();
+            $(".group>i").click(function () {
+                var x = document.getElementById("Password");
+                if (x.type === "password") {
+                    x.type = "text";
+                    this.className = "fa fa-eye-slash";
+                } else {
+                    x.type = "password";
+                    this.className = "fa fa-eye";
+                }
+            });
+            $("#Password").on("focus", function () {
+                $(".group>i").show();
+                $(".ico:eq(1)").hide();
+            }).on("blur", function () {
+                if (this.value != "")
+                    return;
+                $(".group>i").hide();
+                $(".ico:eq(1)").show();
+            });
+
+
+        </script>
+
+
+        <script src="./Login_files/beginningannouncements.js"></script>
+        <script src="./Login_files/login(1).js"></script>
+
+        <!--end::Page Snippets -->
+        <!-- begin::Page Loader -->
+        <!--<script>
+            $(window).on('load', function () {
+                $('body').removeClass('m-page--loading');
+            });
+        </script>-->
+        <!-- end::Page Loader -->
+
+        <!-- end::Body -->
+    </body></html>
